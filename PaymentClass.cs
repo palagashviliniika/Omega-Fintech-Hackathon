@@ -12,10 +12,12 @@ public class PaymentRoot
     public List<NewTransfers> newTransferList = new List<NewTransfers>();
     public List<TransferRequests> transferRequestList = new List<TransferRequests>();
 }
+[Serializable]
 public class Cards
 {
     public string cardIBAN;
 }
+[Serializable]
 public class Transfers
 {
     public string amount;
@@ -24,6 +26,7 @@ public class Transfers
     public bool income;
     public string IBAN;
 }
+[Serializable]
 public class NewTransfers
 {
     public string amount;
@@ -32,6 +35,7 @@ public class NewTransfers
     public bool income;
     public string IBAN;
 }
+[Serializable]
 public class TransferRequests
 {
     public string amount;
